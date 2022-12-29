@@ -1,10 +1,15 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+
+import { Discover, Users, UserDetail } from './pages'
 
 const App = () => {
   return (
-    <h1 className="text-3xl text-teal-500 font-bold underline">
-      Initial commit
-    </h1>
+    <Routes>
+      <Route path='/' element={ <Discover /> } />
+      <Route path='/users' element={ <Users /> } />
+      <Route path='/user-detail' element={ <UserDetail /> } />
+    </Routes>
   )
 }
 
