@@ -1,0 +1,7 @@
+.app__discover {
+  @apply w-full h-screen flex flex-col justify-center items-center gap-10 bg-gradient-to-br from-cyan-900 to-cyan-800;
+
+  svg {
+    @apply text-white lg:w-48 lg:h-48;
+  }
+}

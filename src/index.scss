@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import './assets/scss/config.scss';
+
+@import './assets/scss/components/button.scss';
+@import './assets/scss/components/card.scss';
+@import './assets/scss/components/header.scss';
+@import './assets/scss/components/pills.scss';

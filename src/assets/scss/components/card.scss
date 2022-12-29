@@ -1,0 +1,33 @@
+.card {
+
+  &-user {
+    $this: &;
+    @apply rounded-md shadow-md overflow-hidden;
+
+    &:hover {
+      img { @apply scale-110; }
+
+      #{$this}__content {
+        @apply bg-gray-900;
+      }
+    }
+
+    &__img {
+      @apply h-60 flex justify-center items-center overflow-hidden;
+
+      img { @apply w-full object-contain transition-all duration-500; }
+    }
+
+    &__content {
+      @apply flex flex-col items-center gap-3 bg-gray-900/60 text-center px-3 py-6 transition-all duration-500;
+    }
+
+    &__text {
+      @apply font-semibold text-lg;
+
+      &-misc {
+        @apply font-normal text-gray-300/80 text-sm;
+      }
+    }
+  }
+}

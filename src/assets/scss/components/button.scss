@@ -1,0 +1,7 @@
+.btn {
+  @apply rounded-full px-5 py-2.5 transition-all;
+
+  &-default {
+    @apply bg-gray-700 hover:bg-gray-700/75;
+  }
+}

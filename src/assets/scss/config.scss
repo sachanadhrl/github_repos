@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  @apply bg-gray-700 text-gray-50 font-poppins;
+}
+
+input[type=text] {
+  @apply rounded-full shadow-md text-gray-900 text-center px-10 py-3 lg:w-96;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  @apply font-semibold;
+}
+
+h2 { @apply text-3xl; }
+h4 { @apply text-xl; }
