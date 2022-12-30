@@ -4,7 +4,7 @@ import { BiLeftArrowAlt } from 'react-icons/bi'
 import { HiOutlineUsers, HiOutlineLocationMarker, HiOutlineMail, HiOutlineLink } from 'react-icons/hi'
 import { HiOutlineBuildingOffice2 } from 'react-icons/hi2'
 
-import { RepoList } from '../components'
+import { RepoList, Loader } from '../components'
 import { useGetUserByUsernameQuery, useGetReposByUsernameQuery } from '../redux/services/githubApi'
 
 const UserDetail = () => {
@@ -12,7 +12,7 @@ const UserDetail = () => {
   const { data: user, isFetching: isFetchingUser } = useGetUserByUsernameQuery({ username })
   const { data: userRepos, isFetching: isFetchingRepos  } = useGetReposByUsernameQuery({ username })
 
-  if (isFetchingUser || isFetchingRepos) return 'Loading data...'
+  if (isFetchingUser || isFetchingRepos) return <Loader />
 
   return (
     <>
