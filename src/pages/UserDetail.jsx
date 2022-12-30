@@ -70,7 +70,7 @@ const UserDetail = () => {
           )}
         </div>
         <div className='w-4/6'>
-          <h2>Repositories (66)</h2>
+          <h2>Repositories ({userRepos.length})</h2>
           <div className='divide-y divide-gray-500'>
             {userRepos?.map((repo) => (
               <RepoList
