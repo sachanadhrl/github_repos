@@ -13,7 +13,7 @@
     }
 
     &__img {
-      @apply h-60 flex justify-center items-center overflow-hidden;
+      @apply h-60 flex justify-center items-center bg-gray-800 overflow-hidden;
 
       img { @apply w-full object-contain transition-all duration-500; }
     }
